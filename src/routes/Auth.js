@@ -1,0 +1,41 @@
+import React from "react";
+import { authService } from "../fBase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faGoogle,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+    GoogleAuthProvider,
+    } from "@firebase/auth";
+import AuthForm from "../components/AuthForm";
+
+const Auth = ()=> {
+    const onSocialClick = async (event)=>{
+        const {target:{name}} = event;
+        let provider;
+        if (name==="google"){
+           provider = new GoogleAuthProvider();
+        }
+        await authService.signInWithPopup(provider);
+    };
+
+    return(
+        <div className="authContainer">
+             <FontAwesomeIcon
+                icon={faTwitter}
+                color={"#04AAFF"}
+                size="3x"
+                style={{ marginBottom: 30 }}
+            />
+            <AuthForm />
+            <div>
+                <button onClick={onSocialClick} name="google" className="authGoogle">
+                    Continue with Google <FontAwesomeIcon icon={faGoogle}/>
+                </button>
+            </div>
+             
+        </div>    
+    );
+}; 
+export default Auth;

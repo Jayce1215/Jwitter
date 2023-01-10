@@ -1,0 +1,589 @@
+@import "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+input {
+  all: unset;
+  box-sizing: border-box;
+  appearance: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    "Ubuntu", Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+
+
+button {
+  background-color: #04aaff;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.jweet-input::placeholder {
+  color: #04aaff;
+  opacity: 0.9;
+}
+
+
+
+.formInput {
+  height: 33px;
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: relative;
+  left:15%;
+  border: 1px solid #04aaff;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.ProfileInput{
+  height: 33px;
+  width: 250px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  position: absolute;
+  left:42%;
+  top:20%;
+  border: 1px solid #04aaff;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.updateBtn{
+  cursor: pointer;
+  width:250px; 
+  height: 35px;
+  padding: 10px ;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  background-color: #04aaff;
+  /* position:relative;
+  left: 15%; */
+  display: block;
+  margin-top: 15px;
+  position:absolute;
+  top :24%;
+  left:42%;
+}
+
+
+.editBtn {
+  cursor: pointer;
+  width:120px; 
+  height: 35px;
+  padding: 10px ;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  background-color: #04aaff;
+  /* position:relative;
+  left: 15%; */
+  display: inline-block;
+  margin-top: 15px;
+  position: relative;
+  left:16%;
+  
+}
+
+
+.cancelBtn {
+  cursor: pointer;
+  background-color: tomato;
+  width:120px; 
+  height: 35px;
+  padding: 10px ;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  position:relative;
+  left:18%;
+  display: inline-block;
+  
+  
+}
+
+/* Profile Page */
+
+.profileForm {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.9);
+  padding-bottom: 30px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logOutBtn {
+  cursor: pointer;
+  background-color: tomato;
+  width:250px; 
+  height: 35px;
+  padding: 10px ;
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+  position:absolute;
+  left:42%;
+  top:37%;
+  display: block;
+}
+
+.line{
+  border : 0.7px solid rgba(0, 0, 0, 0.75);
+  width: 300px;
+  position: absolute;
+  left:40.5%;
+  top:33%;
+}
+
+/* Nwitter Factory */
+
+/* .factoryForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+} */
+
+.factoryInput_container {
+  position:absolute;
+  left : 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.factoryInput_input {
+  height: 40px;
+  padding: 0px 20px;
+  border: 1px solid #04aaff;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  width: 400px;
+  text-align: center;
+  
+}
+
+.factoryInput_arrow {
+  position: absolute;
+  right: 0;
+  background-color: #04aaff;
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  
+}
+
+.factoryInput_label {
+  color: #04aaff;
+  cursor: pointer;
+  margin-top: 40px;
+  position:absolute;
+  left:45%;
+  font-weight: 500;
+  margin-bottom: 50px;
+  
+  
+}
+
+.factoryInput__label span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.factoryForm_attachment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.factoryForm_attachment img {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  border-radius: 50px;
+}
+
+.factoryForm_clear {
+  color: #04aaff;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.factoryForm_clear span {
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+/* Nweet */
+
+.jweet {
+  margin-bottom: 20px;
+  max-width: 400px;
+  background-color: white;
+  width: 400px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border:1px solid #04aaff;
+  border-radius: 10px;
+  position:relative;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: rgba(0, 0, 0, 0.8);
+  word-break: break-all; 
+}
+
+.jweet h4 {
+  font-size: 17px;
+  max-width: 400px;
+}
+
+.userName{
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+.time{
+  margin-top: 7.5px;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.jweet img {
+  bottom: 0;
+  left :82%;
+  position: absolute;
+  border-radius: 55%;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  /* margin-bottom: 10px; */
+  
+}
+
+.jweet_actions {
+  position: absolute;
+  right: 30px;
+  bottom: 65px;
+}
+
+.jweet_actions span {
+  cursor: pointer;
+}
+
+.jweet_actions span:first-child {
+  margin-right: 10px;
+}
+
+/* Auth */
+
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.authGoogle {
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 10px 0px;
+  font-size: 13px;
+  text-align: center;
+  width: 180px;
+  background:white;
+  cursor: pointer;
+  margin-top: 30px;
+  position:absolute;
+  left : 50%;
+  transform: translate(-50%,-50%);
+
+  
+}
+
+/* AuthForm */
+
+.authInput {
+  display: flex;
+  justify-items: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  border: 1px solid #04aaff;
+  color:black;
+}
+
+.authInput:focus{
+  border:2.5px solid #04aaff;
+  transition: 0.1s;
+}
+
+.authSubmit {
+  background: #04aaff;
+  color: #04aaff;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 120px;
+  text-align: center;
+  
+}
+
+.authError {
+  color: tomato;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.authSwitch {
+  color: #04aaff;
+  cursor: pointer;
+  margin-bottom: 7.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.control{
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0.75;
+  color: rgba(255, 255, 255, 0.918);
+  padding:1rem;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  display: inline-block;
+}
+
+
+.control ul li{
+  display: inline-block;
+  padding:0 0.7rem;
+}
+
+.play{
+  color:white;
+  position: absolute;
+  right:3rem;
+  margin-right: 3rem; 
+}
+
+.play:hover{
+  transform: scale(1.5);
+  transition: all 0.1s;
+  color:black;
+}
+
+.pause:hover{
+  transform: scale(1.5);
+  transition: all 0.1s;
+  color:white;
+}
+
+.pause{
+  color:black;
+  position: absolute;
+  right:3rem;
+  margin-right: 3rem; 
+}
+
+
+.authBtns{
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 10px 0px;
+  font-size: 13px;
+  text-align: center;
+  width: 125px;
+  background:#04aaff;
+  color:white;
+  line-height: 15px;
+}
+
+
+.authLogIn {
+  display: inline-block;
+
+}
+
+.authForm{
+  width:250px;
+}
+
+.test{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;  
+}
+
+.id, .pw, .name {
+  display: flex;
+  justify-items: center;
+  width: 250px;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  border: 1px solid #04aaff;
+  color:black;
+  margin-top: 10px;
+}
+
+.signInBtn{
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #04aaff;
+  padding: 10px 0px;
+  font-size: 13px;
+  text-align: center;
+  width: 180px;
+  background:#04aaff;
+  margin-top: 30px;
+  position:absolute;
+  left : 50%;
+  transform: translate(-50%,-50%);
+  color:white;
+  font-weight: 700;
+
+}
+
+
+.testError{
+  max-width : 250px;
+}
+
+
+
+.plus{
+  padding-left: 5px;
+}
+
+.myJweets{
+  margin-top: 450px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  background-color: white;
+  width: 400px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border:1px solid #04aaff;
+  border-radius: 10px;
+  position:relative;
+  left:51%;
+  transform: translate(-50%,-50%);
+  color: rgba(0, 0, 0, 0.8);
+  word-break: break-all; 
+  line-height: 25px;
+}
+
+
+
+h1 {
+  position: absolute;
+  left : 47%;
+  top :48%;
+  font-size: 21px;
+}
+
+
+
+
+.signInBtn:hover{
+  transform:scale(1.2);
+  transition: transform .1s;
+}
+
+.factoryInput_arrow:hover{
+  transform:scale(1.2);
+  transition: transform .1s;
+}
+
+.jweet_edit:hover{
+  transform:scale(1.3);
+  transition: transform .1s;
+}
+
+.jweet_cancel:hover{
+  transform:scale(1.3);
+  transition: transform .1s;
+}
+
+.editBtn:hover{
+  transform:scale(1.1);
+  transition: transform .1s;
+}
+.cancelBtn:hover{
+  transform:scale(1.1);
+  transition: transform .1s;
+}
+.factoryInput_label:hover{
+  transform:scale(1.2);
+  transition: transform .1s;
+}
+.updateBtn:hover{
+  transform:scale(1.15);
+  transition: transform .1s;
+}
+.logOutBtn:hover{
+  transform:scale(1.15);
+  transition: transform .1s;
+}
+
+.profile_logo:hover{
+  transform:scale(1.3);
+  transition: transform .1s;
+}
+
+.twitter_logo:hover{
+  transform:scale(1.3);
+  transition: transform .1s;
+}
+
+img:hover{
+  transform:scale(1.3);
+  transition: transform .1s;
+}
