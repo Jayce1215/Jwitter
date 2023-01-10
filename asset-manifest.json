@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Jwitter/static/css/main.d8f5186b.css",
-    "main.js": "/Jwitter/static/js/main.e28a4257.js",
-    "static/media/goosebumpss.mp3": "/Jwitter/static/media/goosebumpss.2d60e9138a0b7b044163.mp3",
-    "index.html": "/Jwitter/index.html",
-    "main.d8f5186b.css.map": "/Jwitter/static/css/main.d8f5186b.css.map",
-    "main.e28a4257.js.map": "/Jwitter/static/js/main.e28a4257.js.map"
+    "main.css": "/Jayce1215/Jwitter.git/static/css/main.d8f5186b.css",
+    "main.js": "/Jayce1215/Jwitter.git/static/js/main.2ab15063.js",
+    "static/media/goosebumpss.mp3": "/Jayce1215/Jwitter.git/static/media/goosebumpss.2d60e9138a0b7b044163.mp3",
+    "index.html": "/Jayce1215/Jwitter.git/index.html",
+    "main.d8f5186b.css.map": "/Jayce1215/Jwitter.git/static/css/main.d8f5186b.css.map",
+    "main.2ab15063.js.map": "/Jayce1215/Jwitter.git/static/js/main.2ab15063.js.map"
   },
   "entrypoints": [
     "static/css/main.d8f5186b.css",
-    "static/js/main.e28a4257.js"
+    "static/js/main.2ab15063.js"
   ]
 }
